@@ -1,6 +1,9 @@
 name: E2E tests for Kubernetes v1.32 and v1.34
 on: 
-  workflow_dispatch:
+  push:
+    branches:
+      - add-e2e-k8s-versions
+  
 
 env:
   # Golang version to use across CI steps
